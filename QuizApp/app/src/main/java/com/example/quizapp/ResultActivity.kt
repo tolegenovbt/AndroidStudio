@@ -12,6 +12,6 @@ class ResultActivity : AppCompatActivity() {
         var category = intent.getSerializableExtra("category") as Category
         var n = intent.getStringExtra("correctCount") as String
         var c = intent.getStringExtra("count") as String
-        textView.text = category.username.toUpperCase()+", "+ " you got: "+n+" out of "+c
+        textView.text = category.username.toUpperCase()+", "+ " you got "+n+" out of "+c
     }
 }
